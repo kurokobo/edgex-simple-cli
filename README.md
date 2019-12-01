@@ -5,7 +5,7 @@ A Simple CLI Tool for EdgeX Founrdy.
 Written in Python using [Python Fire](https://github.com/google/python-fire) library.
 
 
-## Functiona
+## Functions
 
 Currently only LIST and DELETE functions work properly.
 
