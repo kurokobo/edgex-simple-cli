@@ -66,10 +66,12 @@ SUBCOMMAND
 ## Sample
 
 ```sh
-$ python3 edgex-cli.py --host 192.168.0.220 addressable list
-['2b61edd7-16c7-43b5-aaf9-72ed79363def', 'device-virtual']
-['4e754706-207f-453e-857c-d4b9e8b4627c', 'camera control']
-['0c937575-01c6-4911-865b-ec4aaf02caf5', 'camera1 address']
+$ python edgex-cli.py --host 192.168.0.220 addressable list
+ID                                    Name
+------------------------------------  --------------
+2b61edd7-16c7-43b5-aaf9-72ed79363def  device-virtual
+4e754706-207f-453e-857c-d4b9e8b4627c  camera control
+0c937575-01c6-4911-865b-ec4aaf02caf5  camera1 address
 ```
 
 ```sh

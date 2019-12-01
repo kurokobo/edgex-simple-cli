@@ -3,6 +3,7 @@
 import fire
 import requests
 import json
+from tabulate import tabulate
 
 
 class Addressable(object):
@@ -72,9 +73,11 @@ def list_by_url(url, raw=False):
     response = requests.get(url)
     data = response.json()
 
+    list = []
     if raw is False:
         for item in data:
-            print([item["id"], item["name"]])
+            list.append([item["id"], item["name"]])
+        print(tabulate(list, ["ID", "Name"], tablefmt="simple"))
     else:
         print(json.dumps(data, indent=2))
 
